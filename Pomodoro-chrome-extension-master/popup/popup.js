@@ -205,10 +205,4 @@ function isValidNumber(string) {
   return /^\d+$/.test(string);
 }
 
-document.getElementById("settings").onclick = () => {
-  if (chrome.runtime.openOptionsPage) {
-    chrome.runtime.openOptionsPage();
-  } else {
-    window.open(chrome.runtime.getURL("options.html"));
-  }
-};
+
